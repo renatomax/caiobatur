@@ -1,0 +1,185 @@
+.secDois {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    overflow-x: hidden;
+}
+
+.secDois p {
+    padding: 10px 20px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.areaAnimadois {
+    width: 90vw;
+    height: 300px;
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadroRotator {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotatorInicial 8s infinite linear;
+    position: relative;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.empresaCentral {
+    width: 100px;
+    height: 100px;
+    background-image: url("imgs/logo-matinhostur.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rotatorInverso 8s infinite linear;
+    position: absolute;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.quadro {
+    position: absolute;
+    animation: rotatorInverso 8s infinite linear;
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px gray;
+    z-index: 10;
+}
+
+.quadro1 {
+    top: -25px;
+}
+
+.quadro2 {
+    left: -50px;
+}
+
+.quadro3 {
+    right: -50px;
+}
+
+.quadro4 {
+    bottom: -25px;
+}
+
+.linha1 {
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    height: 3px;
+}
+
+.linha2 {
+    width: 3px;
+    position: absolute;
+    background-color: gray;
+    height: 100%;
+}
+
+@keyframes rotatorInicial {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatorInverso {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.areaCardsApresent {
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.containerCards {
+    width: 100vw;
+    min-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card {
+    width: 330px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+}
+
+.imgcard {
+    width: 100%;
+    height: 400px;
+    background-image: url("imgs/imgLindaMatinhos.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+.card2 .imgcard {
+    background-image: url("imgs/restaurantes.jfif");
+}
+
+.card3 .imgcard {
+    background-image: url("imgs/ilha3.webp");
+}
+
+.card4 .imgcard {
+    background-image: url("imgs/ilha2.jfif");
+}
+
+.vaiprolado {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 3px gray,  0px 0px 3px gray inset;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 330px;
+    background-color: whitesmoke;
+    z-index: 30;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animalado 1s linear infinite alternate;
+}
+
+@keyframes animalado {
+    0%{
+        box-shadow: 2px 2px 3px gray,  0px 0px 3px gray inset;
+        color: gray;
+    }
+    100% {
+        box-shadow: 2px 2px 3px gray,  0px 0px 10px greenyellow inset;
+        color: greenyellow;
+        text-shadow: 0px 0px 5px greenyellow, 0px 0px 5px black;
+    }
+}

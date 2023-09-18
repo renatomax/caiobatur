@@ -1,0 +1,183 @@
+.secCinco {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 100px;
+}
+
+.secCinco h3 {
+    color: gray;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.corpoCelular {
+    width: 300px;
+    height: 500px;
+    margin: 10px auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(
+      140deg,
+      rgba(148, 148, 148, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+    backdrop-filter: blur(10px);
+}
+
+.cameraCelular {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border: 1px solid black;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+}
+
+.telaCelular {
+    width: 290px;
+    height: 430px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 10px auto;
+    position: absolute;
+    top: 10px;
+    background-color: whitesmoke;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btnCelular {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    bottom: 5px;
+    box-shadow: 0px 0px 15px black inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cometarioBox {
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 3px 3px 5px gray;
+    border: 1px solid black;
+    position: absolute;
+    bottom: -150px;
+    left: 80px;
+    background-color: whitesmoke;
+}
+
+.comentarioHeader {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    height: 30px;
+}
+
+.notaAvaliacao {
+    position: absolute;
+    width: 50px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}
+
+.notaAvaliacao::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("imgs/estrela.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 5px;
+}
+
+.fotoComentario {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nomeAvaliacao {
+    position: absolute;
+    left: 40px;
+}
+
+.comentarioAvaliacao {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 13px;
+    position: relative;
+    color: black;
+}
+
+.comentarioAvaliacao::before {
+    content: '"';
+    position: absolute;
+    font-size: 40px;
+    left: -5px;
+    top: -10px;
+}
+
+.comentarioAvaliacao::after {
+    content: '"';
+    position: absolute;
+    font-size: 40px;
+    right: -5px;
+    top: -10px;
+}
+
+@keyframes sobeComentario {
+    0%{
+        bottom: -150px;
+    }
+
+    100% {
+        bottom: 450px;
+    }
+}

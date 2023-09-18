@@ -1,0 +1,161 @@
+.secQuatro {
+    width: 100vw;
+    position: relative;
+}
+
+.secQuatro h3, .secQuatro h4 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    color: gray;
+}
+
+.secQuatro h4 {
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+.effectCarrousel {
+    width: 100vw;
+    overflow-x: scroll;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.areaCards {
+    width: 100vw;
+    min-width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vaiproladoConts {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 2px 3px gray,  0px 0px 3px gray inset;
+    border-radius: 50%;
+    bottom: 70px;
+    left: 300px;
+    background-color: whitesmoke;
+    z-index: 30;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardCont {
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    z-index: 10;
+    background-image: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+    backdrop-filter: blur(10px);
+}
+
+.imgCardContact {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-size: contain;
+}
+
+.whatsImg {
+    background-image: url("imgs/whatsapp.png");
+}
+
+.foneImg {
+    background-image: url("imgs/telefone.png");
+}
+
+.cardCont p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.secQuatro form {
+    width: 90vw;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+form #nomePessoa {
+    width: 90vw;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    padding: 10px 0;
+}
+
+.areaSubinputs {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nomeAgencia, #telAgencia {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    padding: 10px 0;
+    width: 48%;
+    position: absolute;
+}
+
+#nomeAgencia {
+    left: 0;
+}
+
+#telAgencia {
+    right: 0;
+}
+
+
+#horario, #btnEnvia {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    padding: 10px 0;
+    position: absolute;
+}
+
+#horario {
+    left: 0;
+    width: 20%;
+}
+
+#btnEnvia {
+    right: 0;
+    width: 76%;
+    background-color: white;
+}

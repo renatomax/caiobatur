@@ -1,0 +1,28 @@
+.secTres {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.secTres p {
+    padding: 30px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.secTres p::after {
+    content: '"';
+    font-size: 60px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.secTres p::before {
+    content: '"';
+    font-size: 60px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
