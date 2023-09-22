@@ -4,7 +4,7 @@ let indexComentarioAnimado = 0;
 
 function comentarioAnimado() {
   comentarios[indexComentarioAnimado].style.animation =
-    "sobeComentario 15s linear";
+    "sobeComentario 20s linear backwards";
   comentarios[indexComentarioAnimado].style.left = randomBetween(0, 80) + "px";
   chamandoProxComent();
 }

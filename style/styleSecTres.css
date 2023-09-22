@@ -26,3 +26,12 @@
     right: 30px;
     top: 20px;
 }
+
+@media (min-width: 900px) {
+    .secTres p {
+        width: 900px;
+        margin: 0 auto;
+        font-size: 25px;
+        margin-bottom: 100px;
+    }
+}

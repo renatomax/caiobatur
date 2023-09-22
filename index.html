@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/styleSecQuatro.css">
     <link rel="stylesheet" href="style/styleSecCinco.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fullFotos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Matinhostur</title>
 </head>
 <body>
@@ -37,37 +39,59 @@
         </section>
 
         <section class="secDois">
-            <p>Sabemos muito bem que viajar é bom, mas conseguir viajar com os amigos e com a familia é um privilégio que poucos vão experimentar.</p>
-            
-
-            <p>Pensando nisso, nossa empresa reuníu os melhores hoteis, res<wbr>tau<wbr>ran<wbr>tes e vare<wbr>jis<wbr>tas da cidade para lhe proporcionar uma ex<wbr>pe<wbr>riên<wbr>cia singular.</p>
 
 
-            <div class="areaAnimadois">
-                <div class="quadroRotator">
-                    <div class="empresaCentral"></div>
-                    <div class="quadro quadro1">Hotéis</div>
-                    <div class="quadro quadro2">Restaurantes</div>
-                    <div class="quadro quadro3">Agencias de Turismo</div>
-                    <div class="quadro quadro4">Varejo</div>
+            <div class="areaExibicao-secdois">
 
-                    <div class="linha1"></div>
-                    <div class="linha2"></div>
+
+                <div class="areaText-secdois">
+
+
+                    <p>Sabemos muito bem que viajar é bom, mas conseguir viajar com os amigos e com a familia é um privilégio que poucos vão experimentar.</p>
+                
+
+                    <p>Pensando nisso, nossa empresa reuníu os melhores hoteis, res<wbr>tau<wbr>ran<wbr>tes e vare<wbr>jis<wbr>tas da cidade para lhe proporcionar uma ex<wbr>pe<wbr>riên<wbr>cia singular.</p>
+
+
+                </div>
+                
+
+
+                <div class="areaAnimadois">
+                    <div class="quadroRotator">
+                        <div class="empresaCentral"></div>
+                        <div class="quadro quadro1">Hotéis</div>
+                        <div class="quadro quadro2">Restaurantes</div>
+                        <div class="quadro quadro3">Agencias de Turismo</div>
+                        <div class="quadro quadro4">Varejo</div>
+
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                    </div>
                 </div>
             </div>
+            
 
 
             <div class="areaCardsApresent">
 
                 <div class="containerCards">
                     
-                    <div class="vaiprolado">→</div>
+                    
 
                     <div class="card card1">
 
+                        <div class="vaiprolado">
+
+                            <p>Arrasta pro lado →</p>
+
+                        </div>
+
                         <div class="imgcard"></div>
         
-                        <p>Reunir seus amigos e família juntos em uma viagem incrível, você definitivamente não pre<wbr>cisa sair do país para isso, e me<wbr>lhor, com va<wbr>lo<wbr>res acessí<wbr>veis e de alta com<wbr>pe<wbr>ti<wbr>ção com mer<wbr>cado, só a CaiobáTur vai te entregar isso. Venha conferir.</p>
+                        
+
+                        <p>Sabemos muito bem que cidades turísticas tendem a ser mais caras que o comum, e visando facilitar e trazer acessibilidade a esse Paraíso, a CaiobáTur faz a frente pra você em todos os setores, minimizando seus custos ao máximo. Nosso objetivo é mesclar sua felicidade com economia.</p>
 
         
         
@@ -88,7 +112,7 @@
 
                         <div class="imgcard"></div>
         
-                        <p>Sabemos muito bem que cidades turísticas tendem a ser mais caras que o comum, e visando facilitar e trazer acessibilidade a esse Paraíso, a CaiobáTur faz a frente pra você em todos os setores, minimizando seus custos ao máximo. Nosso objetivo é mesclar sua felicidade com economia.</p>
+                        <p>Reunir seus amigos e família juntos em uma viagem incrível, você definitivamente não pre<wbr>cisa sair do país para isso, e me<wbr>lhor, com va<wbr>lo<wbr>res acessí<wbr>veis e de alta com<wbr>pe<wbr>ti<wbr>ção com mer<wbr>cado, só a CaiobáTur vai te entregar isso. Venha conferir. Vamos dar o máximo para lhe surpreender!</p>
         
         
                     </div>
@@ -97,7 +121,7 @@
 
                         <div class="imgcard"></div>
         
-                        <p>Nossa cidade realmente foi contemplada pela natureza, repleta de cachoeiras, trilhas, lindas praias. Convidamos todos vocês a fugir da rotina e criar memórias que com certeza trarão a sua vida a felicidade que aos poucos a rotina tende a nos tirar. Vem com a CaiobáTur!</p>
+                        <p>Matinhos realmente foi contemplada pela natureza, repleta de cachoeiras, trilhas, lindas praias. Convidamos todos vocês a fugir da rotina e criar memórias que com certeza trarão a sua vida a felicidade que aos poucos a rotina tende a nos tirar. Vem com a CaiobáTur!</p>
         
         
                     </div>
@@ -121,8 +145,12 @@
                 
                 <div class="areaCards">
 
-                    <div class="vaiproladoConts">ou →</div>
                     <div class="cardCont whatsCard">
+                        <div class="vaiprolado ladoContato">
+
+                            <p>Arrasta pro lado →</p>
+
+                        </div>
                         <div class="imgCardContact whatsImg"></div>
                         <p>Entre em contato agora mesmo por WhatsApp.</p>
                     </div>
@@ -134,13 +162,13 @@
 
             </div>
 
-            <h4>Ou você também pode agendar uma reunião conosco.</h4>
-            <form action="">
-                <input type="text" id="nomePessoa" placeholder="Nome Completo Aqui:">
+            <h4>Ou você também pode agendar seu contato conosco.</h4>
+            <form  action="https://formspree.io/f/xrgwagyg" method="POST" id="meuForm">
+                <input type="text" id="nomePessoa" name="nomePessoa" placeholder="Nome Completo Aqui:">
 
                 <div class="areaSubinputs">
-                    <input type="text" id="nomeAgencia" placeholder="Nome da Agência">
-                    <input type="tel" id="telAgencia" placeholder="(99) 9 9999-9999">
+                    <input type="text" id="nomeAgencia" name="nomeAgencia" placeholder="Nome da Agência">
+                    <input type="tel" id="telAgencia" name="telAgencia" placeholder="(99) 9 9999-9999">
                 </div>
 
                 <div class="areaSubinputs">
@@ -155,7 +183,11 @@
                         <option value="">16:00</option>
                         <option value="">17:00</option>
                     </select>
-                    <button id="btnEnvia">Solicitar Reunião</button>
+                    <button id="btnEnvia">Solicitar Contato</button>
+                </div>
+
+                <div class="estadoForm sai-estado-formm-priv ">
+                    <p></p>
                 </div>
             </form>
         </section>
@@ -164,66 +196,184 @@
 
             <h3>CaiobáTur, o que estão dizendo sobre nós? Confira!</h3>
 
-            <div class="corpoCelular">
 
-                <div class="cameraCelular"></div>
+            <div class="areaExibida-secCinco">
+                <div class="areaScroll-secCinco">
 
-                <div class="telaCelular">
+                    <div class="corpoCelular">
 
-                    <div class="cometarioBox">
-                        <div class="notaAvaliacao">4/5</div>
-                        <div class="comentarioHeader">
-                            <div class="fotoComentario">C</div>
-                            <div class="nomeAvaliacao">Chirolin Chirolei</div>
+                        <div class="cameraCelular"></div>
+        
+                        <div class="telaCelular">
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">4/5</div>
+                                <div class="comentarioHeader">
+                                    <div class="fotoComentario" style="background-color: greenyellow;">L</div>
+                                    <div class="nomeAvaliacao">Leandro Pena</div>
+                                </div>
+                                <div class="comentarioAvaliacao">O lugar era realmente bem simples, mas logo quando chegamos fui muito bem atendido, pessoal simpático e as praias eram muito limpas. Recomendo.</div>
+                            </div>
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader">
+                                    <div class="fotoComentario">C</div>
+                                    <div class="nomeAvaliacao">Camila Couto</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Adorei, fui super bem atendida, que pessoal atencioso! Sério, foi incrível. Ano que vem tem de novo!</div>
+                            </div>
+        
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader">
+                                    <div class="fotoComentario" style="background-color: rgb(255, 94, 0);">O</div>
+                                    <div class="nomeAvaliacao">Olavio Tempesta</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Viagem muito agradável, pessoal nota 10. O preço também me surpreendeu. Com certeza pretendo voltar.</div>
+                            </div>
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">4/5</div>
+                                <div class="comentarioHeader">
+                                    <div class="fotoComentario" style="background-color: aqua;">C</div>
+                                    <div class="nomeAvaliacao">Caio Macedo</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Gostei, mas senti falta de eventos na cidade. Atende bem a expectativa de ser um lugar tranquilo e muito calmo. As praias são lindas.</div>
+                            </div>
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario" style="background-color: burlywood;">C</div>
+                                    <div class="nomeAvaliacao">Carlos Spockovisk</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Hospedagem e restaurantes maravilhosos, o preço me surpreendeu também. Ótimo atendimento, sucesso pra toda a equipe.</div>
+                            </div>
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario" style="background-color: springgreen;">N</div>
+                                    <div class="nomeAvaliacao">Noemi Bonfim</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Sempre viajei muito, e poucos lugares me deram uma sensação tão agradável quanto Caiobá. Cidade maravilhosa! Quero voltar mais vezes.</div>
+                            </div>
+        
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario" style="background-color: violet;">V</div>
+                                    <div class="nomeAvaliacao">Vania Maria</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Eu não esperava cansar tanto tentando descansar! hahahaha. Tudo muito bacana, voltarei mais vezes.</div>
+                            </div>
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario"style="background-color: red;">M</div>
+                                    <div class="nomeAvaliacao">Mariano Comin</div>
+                                </div>
+                                <div class="comentarioAvaliacao">A praia de Caiobá é uma delícia, tem um clima agradável e um mar calmo. Fiquei em um apartamento completo e aconchegante, que a agência CaiobáTur me indicou..</div>
+                            </div>
+        
+        
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao">5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario" style="background-color: springgreen;">J</div>
+                                    <div class="nomeAvaliacao">José Aguiar</div>
+                                </div>
+                                <div class="comentarioAvaliacao">Gostei, com certeza pretendo voltar.</div>
+                            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                            <div class="cometarioBox">
+                                <div class="notaAvaliacao" >5/5</div>
+                                <div class="comentarioHeader" >
+                                    <div class="fotoComentario" style="background-color: teal;">C</div>
+                                    <div class="nomeAvaliacao">Camila Luca</div>
+                                </div>
+                                <div class="comentarioAvaliacao">A praia de Caiobá é um lugar especial, tem uma energia boa e uma vibe positiva. Fiquei em um hotel que tem uma decoração linda e um atendimento cordial. </div>
+                            </div>
+        
                         </div>
-                        <div class="comentarioAvaliacao">Adorei, super recomendo, foi incrível.</div>
+        
+                        <div class="btnCelular"></div>
+
+                        <div class="vaiprolado ladoContato">
+
+                            <p>Arrasta pro lado →</p>
+
+                        </div>
+        
                     </div>
 
+                    <div class="btnFotos">
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
+                        <div class="fotos"></div>
 
-                    <div class="cometarioBox">
-                        <div class="notaAvaliacao">4/5</div>
-                        <div class="comentarioHeader">
-                            <div class="fotoComentario">C</div>
-                            <div class="nomeAvaliacao">Chirolin Chirolei</div>
-                        </div>
-                        <div class="comentarioAvaliacao">Adorei, super recomendo, foi incrível.</div>
+
+                        <div class="backgroundFotos">Fotos</div>
                     </div>
-
-
-                    <div class="cometarioBox">
-                        <div class="notaAvaliacao">4/5</div>
-                        <div class="comentarioHeader">
-                            <div class="fotoComentario">C</div>
-                            <div class="nomeAvaliacao">Chirolin Chirolei</div>
-                        </div>
-                        <div class="comentarioAvaliacao">Adorei, super recomendo, foi incrível.</div>
-                    </div>
-
-
-                    <div class="cometarioBox">
-                        <div class="notaAvaliacao">4/5</div>
-                        <div class="comentarioHeader">
-                            <div class="fotoComentario">C</div>
-                            <div class="nomeAvaliacao">Chirolin Chirolei</div>
-                        </div>
-                        <div class="comentarioAvaliacao">Adorei, super recomendo, foi incrível.</div>
-                    </div>
-
-
-                    <div class="cometarioBox">
-                        <div class="notaAvaliacao">4/5</div>
-                        <div class="comentarioHeader">
-                            <div class="fotoComentario">C</div>
-                            <div class="nomeAvaliacao">Chirolin Chirolei</div>
-                        </div>
-                        <div class="comentarioAvaliacao">Adorei, super recomendo, foi incrível.</div>
-                    </div>
-
+                    
                 </div>
-
-                <div class="btnCelular"></div>
-
             </div>
+
+            
+
+
+            
 
         </section>
         
@@ -232,8 +382,19 @@
     <footer>
         <p>CaiobáTur, sua tradição começa aqui.</p>
     </footer>
+    
+    <div class="fullFotos removeFull">
 
+        <img class="imgExibicao" src="style/fotos/foto1.jpg"></img>
+
+        <button class="btnfoto avancar">Próximo</button>
+        <button class="btnfoto anterior">Anterior</button>
+
+    </div>
 
     <script src="scripts/animandoComent.js"></script>
+    <script src="scripts/tratamentoForm.js"></script>
+    <script src="scripts/contatos.js"></script>
+    <script src="scripts/fotoFull.js"></script>
 </body>
 </html>

@@ -156,30 +156,92 @@
 
 .vaiprolado {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    box-shadow: 2px 2px 3px gray,  0px 0px 3px gray inset;
-    border-radius: 50%;
-    bottom: 20px;
-    left: 330px;
-    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 200px;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 0, 0, 0) 10%, white 50%, rgba(255, 0, 0, 0) 90%);
     z-index: 30;
     font-size: 20px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: animalado 1s linear infinite alternate;
+    animation: animalado 10s linear infinite;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+
+
+
+.vaiprolado p {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    animation: animaladoP 10s linear infinite;
+    transform: translateX(-100%);
+    text-transform: uppercase;
 }
 
 @keyframes animalado {
     0%{
-        box-shadow: 2px 2px 3px gray,  0px 0px 3px gray inset;
-        color: gray;
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
     }
     100% {
-        box-shadow: 2px 2px 3px gray,  0px 0px 10px greenyellow inset;
-        color: greenyellow;
-        text-shadow: 0px 0px 5px greenyellow, 0px 0px 5px black;
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes animaladoP {
+    0%{
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .areaExibicao-secdois {
+        margin: 100px auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .areaText-secdois {
+        width: 600px;
+        margin: auto;
+        height: 100%;
+    }
+
+    
+    .areaAnimadois {
+        max-width: 400px;
+    }
+
+    .areaText-secdois p {
+        font-size: 20px;
+    }
+
+    .areaCardsApresent {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .secDois .vaiprolado {
+        display: none;
     }
 }

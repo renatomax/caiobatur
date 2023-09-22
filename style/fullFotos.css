@@ -1,0 +1,46 @@
+.fullFotos {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .3s;
+}
+
+.imgExibicao {
+    width: 100vw;
+    max-width: 700px;
+}
+
+.btnfoto {
+    width: 50vw;
+    height: 50px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.btnfoto:active {
+    box-shadow: 0px 0px 30px greenyellow inset, 0px 0px 10px black inset;
+}
+
+.avancar {
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 30px;
+}
+
+.anterior {
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 30px;
+}
+
+.removeFull {
+    transform: translateX(-100vw);
+}
